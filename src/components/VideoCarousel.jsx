@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { hightlightsSlides } from "../constants";
 import gsap from "gsap";
+import { pauseImg, playImg, replayImg } from "../utils";
+import { useGSAP } from "@gsap/react";
 
 export const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -16,6 +18,23 @@ export const VideoCarousel = () => {
   });
   const [loadedData, setLoadedData] = useState([]);
   const { isEnd, startPlay, videoId, isLastVideo, isPlaying } = video;
+
+  useGSAP(() => {
+    gsap.to("#video", {
+      scrollTrigger: {
+        trigger: "#video",
+        toggleActions: "restart none none none",
+      },
+      onComplete: () => {
+        setVideo((prevVideo) => ({
+          ...prevVideo,
+          startPlay: true,
+          isPlaying: true,
+        }));
+      },
+    });
+  }, [isEnd, videoId]);
+
   useEffect(() => {
     if (loadedData.length > 3) {
       if (!isPlaying) {
@@ -25,6 +44,9 @@ export const VideoCarousel = () => {
       }
     }
   }, [startPlay, videoId, isPlaying, loadedData]);
+
+  const handleLoadedMetadata = (index, event) =>
+    setLoadedData((prevVideo) => [...prevVideo, event]);
 
   useEffect(() => {
     const currentProgress = 0;
@@ -39,6 +61,39 @@ export const VideoCarousel = () => {
     }
   }, [videoId, startPlay]);
 
+  const handleProcess = (type, index) => {
+    switch (type) {
+      case "video-end":
+        setVideo((prevVideo) => ({
+          ...prevVideo,
+          isEnd: true,
+          videoId: index + 1,
+        }));
+        break;
+      case "video-last":
+        setVideo((prevVideo) => ({
+          ...prevVideo,
+          isLastVideo: true,
+        }));
+        break;
+      case "video-reset":
+        setVideo((prevVideo) => ({
+          ...prevVideo,
+          isLastVideo: false,
+          videoId: 0,
+        }));
+        break;
+      case "play":
+        setVideo((prevVideo) => ({
+          ...prevVideo,
+          isPlaying: !prevVideo.isPlaying,
+        }));
+        break;
+
+      default:
+        return video;
+    }
+  };
   return (
     <>
       <div className="flex items-center">
@@ -58,6 +113,9 @@ export const VideoCarousel = () => {
                       isPlaying: true,
                     }));
                   }}
+                  onLoadedMetadata={(event) =>
+                    handleLoadedMetadata(index, event)
+                  }
                 >
                   <source src={item.video} type="video/mp4" />
                 </video>
@@ -88,6 +146,19 @@ export const VideoCarousel = () => {
             </span>
           ))}
         </div>
+        <button className="control-btn">
+          <img
+            src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
+            alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
+            onClick={
+              isLastVideo
+                ? () => handleProcess("video-reset")
+                : !isPlaying
+                ? handleProcess("play")
+                : handleProcess("pause")
+            }
+          />
+        </button>
       </div>
     </>
   );
