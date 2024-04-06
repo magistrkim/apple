@@ -73,6 +73,22 @@ export const VideoCarousel = () => {
           </div>
         ))}
       </div>
+      <div className="relative mt-10 flex-center">
+        <div className="flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full">
+          {videoRef.current.map((_, index) => (
+            <span
+              key={index}
+              ref={(el) => (videoDivRef.current[index] = el)}
+              className="mx-2 w-3 h-3 cursor-pointer relative bg-gray-200 rounded-full"
+            >
+              <span
+                className="absolute rounded-full w-full h-full"
+                ref={(el) => (videoSpanRef.current[index] = el)}
+              />
+            </span>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
