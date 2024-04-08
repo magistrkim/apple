@@ -8,6 +8,7 @@ import Lights from "./Lights";
 import Phone from "./Phone";
 import { Suspense } from "react";
 import * as THREE from "three";
+import Loader from "./Loader";
 
 const ModelView = ({
   index,
@@ -42,13 +43,7 @@ const ModelView = ({
         name={`${index === 1} ? "small" : "large"`}
       >
         {" "}
-        <Suspense
-          fallback={
-            <Html>
-              <div>Loading...</div>
-            </Html>
-          }
-        >
+        <Suspense fallback={<Loader />}>
           <Phone
             scale={index === 1 ? [15, 15, 15] : [17, 17, 17]}
             item={item}
