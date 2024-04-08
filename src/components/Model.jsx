@@ -1,8 +1,30 @@
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ModelView from "./ModelView";
+import { yellowImg } from "../utils";
+import * as THREE from "three";
 
 const Model = () => {
+  const [size, setSize] = useState("small");
+  const [model, setModel] = useState({
+    title: "iPhone 15 Pro in Natural Titanium",
+    color: ["#8F8A81", "#FFE7B9", "#6F6C64"],
+    img: yellowImg,
+  });
+
+  // camera control for the model view
+  const cameraControlSmall = useRef();
+  const cameraControlLarge = useRef();
+
+  // model control
+  const smallModel = useRef(new THREE.Group());
+  const largeModel = useRef(new THREE.Group());
+
+  // rotation control
+  const [smallRotation, setSmallRotation] = useState(0);
+  const [largeRotation, setLargeRotation] = useState(0);
+
   useGSAP(() => {
     gsap.to("#heading", {
       opacity: 1,
