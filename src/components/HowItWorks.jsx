@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import { chipImg, frameImg, frameVideo } from "../utils";
 import gsap from "gsap";
 import { useRef } from "react";
+import { animateWithGsap } from "../utils/animation";
 
 const HowItWorks = () => {
   const videoRef = useRef();
@@ -14,6 +15,12 @@ const HowItWorks = () => {
       opacity: 0,
       scale: 2,
       duration: 2,
+      ease: "power2.inOut",
+    });
+    animateWithGsap(".g_fadeIn", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
       ease: "power2.inOut",
     });
   }, []);
@@ -53,9 +60,33 @@ const HowItWorks = () => {
                 <source src={frameVideo} type="video/mp4" />
               </video>
             </div>
-                  </div>
-                  
-                  
+          </div>
+          <p className="text-center mt-3 text-gray font-semibold">
+            Honkai: Star rail
+          </p>
+        </div>
+        <div className="hiw-text-container">
+          <div className="flex flex-1 justify-center flex-col">
+            <p className="hiw-text g_fadeIn mb-4">
+              A17 Pro is an entirely new class of iPhone chip that delivers our{" "}
+              <span className="text-white">
+                best graphic performance by far.{" "}
+              </span>
+            </p>
+
+            <p className="hiw-text g_fadeIn">
+              Mobile{" "}
+              <span className="text-white">
+                games will look and feel so immersive,{" "}
+              </span>
+              with incredibly detailed environments and characters.
+            </p>
+          </div>
+          <div className="flex flex-1 flex-col justify-center g_fadeIn">
+            <p className="hiw-text">New</p>
+            <p className="hiw-bigtext">Pro-class GPU</p>
+            <p className="hiw-text">with 6 cores.</p>
+          </div>
         </div>
       </div>
     </section>
