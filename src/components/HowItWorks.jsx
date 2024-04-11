@@ -1,8 +1,10 @@
 import { useGSAP } from "@gsap/react";
-import { chipImg } from "../utils";
+import { chipImg, frameImg, frameVideo } from "../utils";
 import gsap from "gsap";
+import { useRef } from "react";
 
 const HowItWorks = () => {
+  const videoRef = useRef();
   useGSAP(() => {
     gsap.from("#chip", {
       scrollTrigger: {
@@ -20,6 +22,40 @@ const HowItWorks = () => {
       <div className="screen-max-width">
         <div id="chip" className="flex-center my-20 w-full">
           <img src={chipImg} alt="chip" width={180} height={180} />
+        </div>
+        <div className="flex flex-col items-center">
+          <h2 className="hiw-title">
+            A17 Pro
+            <br />A monster wins for gaming
+          </h2>
+          <p className="hiw-subtitle">
+            It is here. The biggest redesign in the history of Apple GPUs
+          </p>
+        </div>
+        <div className="mt-10 mb-14 md:mt-20">
+          <div className="relative h-full flex-center">
+            <div className="overflow-hidden">
+              <img
+                src={frameImg}
+                alt="frame"
+                className="relative bg-transparent z-10"
+              />
+            </div>
+            <div className="hiw-video">
+              <video
+                className="pointer-events-none"
+                playsInline
+                preload="none"
+                muted
+                autoPlay
+                ref={videoRef}
+              >
+                <source src={frameVideo} type="video/mp4" />
+              </video>
+            </div>
+                  </div>
+                  
+                  
         </div>
       </div>
     </section>

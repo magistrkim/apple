@@ -33,17 +33,31 @@ const Model = () => {
 
   useEffect(() => {
     if (size === "large") {
-      animateWithGsapTimeline(tl, smallModel, smallRotation, "#view1", "#view2", {
-        transform: "translateX(-100%)",
-        duration: 2,
-      });
+      animateWithGsapTimeline(
+        tl,
+        smallModel,
+        smallRotation,
+        "#view1",
+        "#view2",
+        {
+          transform: "translateX(-100%)",
+          duration: 2,
+        }
+      );
     }
 
     if (size === "small") {
-      animateWithGsapTimeline(tl, largeModel, largeRotation, "#view2", "#view1", {
-        transform: "translateX(0)",
-        duration: 2,
-      });
+      animateWithGsapTimeline(
+        tl,
+        largeModel,
+        largeRotation,
+        "#view2",
+        "#view1",
+        {
+          transform: "translateX(0)",
+          duration: 2,
+        }
+      );
     }
   }, [size]);
 
@@ -95,7 +109,10 @@ const Model = () => {
             </Canvas>
           </div>
           <div className="w-full mx-auto">
-            <p className="text-sm font-light text-center mb-5">{model.title}</p>
+            <p className="text-sm font-light text-center mb-2">{model.title}</p>
+            <p className="text-sm font-light text-gray-200 text-center mb-5">
+              Move iPhone with your mouse
+            </p>
             <div className="flex-center">
               <ul className="color-container">
                 {models.map((item, index) => (
