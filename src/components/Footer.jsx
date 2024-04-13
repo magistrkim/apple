@@ -19,7 +19,16 @@ const Footer = () => {
         <div className="w-full h-[1px] bg-neutral-700 my-5" />
         <div className="flex flex-col md:flex-row md:items-center justify-between">
           <p className="font-semibold text-gray text-xs">
-            Copyright @ 2024 Kim Inc. All rights reserved
+            Copyright @ 2024{" "}
+            <a
+              href="https://www.linkedin.com/in/nataliya-kachor-522170271/"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              className="underline text-blue"
+            >
+              Kim Inc. {" "}
+            </a>{" "}
+            All rights reserved
           </p>
           <div className="flex">
             {footerLinks.map((item, index) => (
