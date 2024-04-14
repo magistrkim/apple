@@ -27,6 +27,7 @@ It highlights the effective use of GSAP (Greensock Animations) and Three.js for 
 - GSAP (Greensock)
 - Vite
 - Tailwind CSS
+- GLTF converter into JSX https://gltf.pmnd.rs/
 
 <br />
    
