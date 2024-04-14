@@ -1,4 +1,4 @@
-# iPhone 15 Pro 
+# Iphone 15 Pro Website 
 <div align="center">
   <br />
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
@@ -7,8 +7,9 @@
    <br />
 </div>
 
-## <a name="introduction">📋 Introduction</a>
-React-based CRM dashboard featuring comprehensive authentication, antd charts, sales management, and a fully operational kanban board with live updates for real-time actions across all devices.
+## <a name="introduction">📄 Introduction</a>
+This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. 
+It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.
 
 <br />
   
@@ -18,15 +19,14 @@ React-based CRM dashboard featuring comprehensive authentication, antd charts, s
     </a>
 </div>
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
-- TypeScript
-- Refine
-- Ant-Design
-- Kanban
-- React
-- GraphQL
+## <a name="tech-stack">☢️ Tech Stack</a>
+- React.js
+- Three.js
+- React Three Fiber
+- React Three Drei
+- GSAP (Greensock)
 - Vite
-- Nest.js
+- Tailwind CSS
 
 <br />
    
@@ -39,17 +39,17 @@ React-based CRM dashboard featuring comprehensive authentication, antd charts, s
 </div>
 
 
-## <a name="features">🔋 Features</a>
+## <a name="features">🔝 Features</a>
 
-👉 **Authentication**: Seamless onboarding with secure login and signup functionalities; robust password recovery ensures a smooth authentication experience.
+✔️ **Beautiful Subtle Smooth Animations using GSAP**: Enhanced user experience with seamless and captivating animations powered by GSAP.
 
-👉 **Home Page**: Dynamic home page showcases interactive charts for key metrics; real-time updates on activities, upcoming events, and a deals chart for business insights.
+✔️ **3D Model Rendering with Different Colors and Sizes**: Explore the iPhone 15 Pro from every angle with dynamic 3D rendering, offering various color and size options.
 
-👉 **Companies Page**: Complete CRUD for company management and sales processes; detailed profiles with add/edit functions, associated contacts/leads, pagination, and field-specific search.
+✔️ **Custom Video Carousel (made with GSAP)**: Engage users with a unique and interactive video carousel developed using GSAP for a personalized browsing experience.
 
-👉 **Kanban Board**: Collaborative board with real-time task updates; customization options include due dates, markdown descriptions, and multi-assignees, dynamically shifting tasks across dashboards.
+✔️ **Completely Responsive**: Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
 
-👉 **Account Settings**: Personalized user account settings for profile management; streamlined configuration options for a tailored application experience.
+and many more, including code architecture and reusability 
 
 <div align="center">
    <br />
@@ -60,8 +60,6 @@ React-based CRM dashboard featuring comprehensive authentication, antd charts, s
 </div>
 
 <br />
- 
-👉 **Company creation and Tasks editing**: The user is able to create a new company and to add or edit tasks.
 
 
 <div align="center">
@@ -87,4 +85,12 @@ React-based CRM dashboard featuring comprehensive authentication, antd charts, s
     <img src="https://img.shields.io/badge/-Refine-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="refine" />
     <img src="https://img.shields.io/badge/-Kanban-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="kanban" />
      <img src="https://img.shields.io/badge/-Vite-black?style=for-the-badge&logoColor=white&color=FF0F00" alt="vite" />
+     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
+    <img src="https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02" alt="greensock" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
+  
+## <a name="features">©️ MagistrKim 2024</a>
+
+
