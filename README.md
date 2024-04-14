@@ -2,7 +2,7 @@
 <div align="center">
   <br />
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-      <img src="https://github.com/magistrkim/refine-vite/assets/115700340/a953274d-9b27-4fff-9223-6ca1c2a79d47" alt="Project Banner">
+      <img src="https://github.com/magistrkim/apple/assets/115700340/27d64586-3815-4b2f-947b-6886931af03b" alt="Project Banner">
     </a>
    <br />
 </div>
@@ -15,7 +15,7 @@ It highlights the effective use of GSAP (Greensock Animations) and Three.js for 
   
 <div align="center">
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-      <img src="https://github.com/magistrkim/refine-vite/assets/115700340/3c1fd290-2e05-4b82-bf65-3c3224dbeb8a" alt="Project Image"> 
+      <img src="https://github.com/magistrkim/apple/assets/115700340/da010d2e-8792-4bf3-9f44-2252405b1c67" alt="Project Image"> 
     </a>
 </div>
 
@@ -33,7 +33,7 @@ It highlights the effective use of GSAP (Greensock Animations) and Three.js for 
 <div align="center">
    <br />
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-      <img src="https://github.com/magistrkim/refine-vite/assets/115700340/ee07a2b8-8dfe-42aa-8815-4d5305d6c664" alt="Project Image"> 
+      <img src="https://github.com/magistrkim/apple/assets/115700340/5afb6494-f481-4831-9dc6-518bf7f68eeb" alt="Project Image"> 
     </a>
    <br />
 </div>
@@ -54,7 +54,7 @@ and many more, including code architecture and reusability
 <div align="center">
    <br />
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-      <img src="https://github.com/magistrkim/refine-vite/assets/115700340/08468a47-a0ae-47a0-9c90-8a5f860ffe99" alt="Project Image"> 
+      <img src="https://github.com/magistrkim/apple/assets/115700340/2ec98a86-d2a2-4a2c-b1f2-9e2cb454f3c3" alt="Project Image"> 
     </a>
    <br />
 </div>
@@ -64,17 +64,11 @@ and many more, including code architecture and reusability
 
 <div align="center">
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-      <img src="https://github.com/magistrkim/refine-vite/assets/115700340/ef89673f-38fc-43f2-b6ff-a5b34ec17c7a" alt="Project Image"> 
+      <img src="https://github.com/magistrkim/apple/assets/115700340/1ceed302-010f-4697-9ab6-529d547063d8" alt="Project Image"> 
     </a>
 </div>
 
 <br />
-
-<div align="center">
-    <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
-       <img src="https://github.com/magistrkim/refine-vite/assets/115700340/46f92424-3a35-46ce-bc81-3d2e07424200" alt="Project Image">   
-    </a>       
-</div>
 
 <br />
 
