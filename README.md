@@ -62,7 +62,6 @@ and many more, including code architecture and reusability
 
 <br />
 
-
 <div align="center">
     <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
       <img src="https://github.com/magistrkim/apple/assets/115700340/1ceed302-010f-4697-9ab6-529d547063d8" alt="Project Image"> 
@@ -70,6 +69,22 @@ and many more, including code architecture and reusability
 </div>
 
 <br />
+
+<div align="center">
+    <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
+      <img src="https://github.com/magistrkim/apple/assets/115700340/0b4499db-181e-47bd-8f93-6d147c0b9ce7"
+ alt="Project Image"> 
+    </a>
+</div>
+
+<br />
+
+<div align="center">
+    <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
+      <img src="https://github.com/magistrkim/apple/assets/115700340/4ab21bb3-9c1d-4adc-9716-19abf9e7b0f5"
+ alt="Project Image"> 
+    </a>
+</div>
 
 <br />
 
